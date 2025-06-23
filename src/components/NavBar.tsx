@@ -1,11 +1,6 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
-import { CircleCheckIcon, CircleHelpIcon, CircleIcon } from "lucide-react";
-import {
-  IconBrandGithub,
-  IconBrandLinkedin,
-  IconGitBranch,
-} from "@tabler/icons-react";
+import { IconBrandGithub, IconBrandLinkedin } from "@tabler/icons-react";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -25,11 +20,6 @@ import Sql from "../assets/sql.svg";
 
 import Tools from "../assets/tools.svg";
 
-import Github from "../assets/github.svg";
-
-import { toast } from "sonner";
-import { Tooltip } from "./ui/tooltip";
-import { TooltipContent, TooltipTrigger } from "@radix-ui/react-tooltip";
 import { Button } from "./ui/button";
 
 const components: {
