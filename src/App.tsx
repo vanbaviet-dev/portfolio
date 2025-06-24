@@ -5,22 +5,26 @@ import Home from "./pages/Home";
 import { Toaster } from "sonner";
 import { ThemeProvider } from "@/components/theme-provider";
 import { ModeToggle } from "./components/mode-toggle";
+import Footer from "./components/Footer";
 function App() {
   const Layout = () => {
     return (
       <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-        <div className="flex flex-col font-sans ">
+        <div className="flex flex-col font-sans min-h-dvh justify-between">
           <div className="w-full">
             <NavBar />
           </div>
-          <>
+          <div className="h-full">
             <Outlet />
-          </>
-          <Toaster />
-          <div className="fixed bottom-4 right-4">
-            <ModeToggle />
+          </div>
+          <div>
+            <Footer />
           </div>
         </div>
+        <div className="fixed bottom-4 right-4">
+          <ModeToggle />
+        </div>
+        <Toaster />
       </ThemeProvider>
     );
   };

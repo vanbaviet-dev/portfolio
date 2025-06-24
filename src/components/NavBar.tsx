@@ -67,7 +67,7 @@ const components: {
 
 export default function NavBar() {
   return (
-    <div className="flex flex-row justify-between pt-5">
+    <div className="flex flex-row justify-between py-5">
       <div className="basis-64 flex justify-center items-center">
         <Link to="https://vanbaviet.dev" className="font-mono">
           <span className="text-2xl font-extrabold">vanbaviet</span>
