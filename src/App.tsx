@@ -6,6 +6,7 @@ import { Toaster } from "sonner";
 import { ThemeProvider } from "@/components/theme-provider";
 import { ModeToggle } from "./components/mode-toggle";
 import Footer from "./components/Footer";
+import Portfolio from "./pages/Portfolio";
 function App() {
   const Layout = () => {
     return (
@@ -40,6 +41,11 @@ function App() {
         {
           path: "/",
           element: <Home />,
+        },
+
+        {
+          path: "/portfolio",
+          element: <Portfolio />,
         },
       ],
     },

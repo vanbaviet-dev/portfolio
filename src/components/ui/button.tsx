@@ -9,6 +9,8 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
+        skill:
+          "cursor-pointer bg-primary text-primary-foreground shadow-xs hover:bg-primary",
         default:
           "cursor-pointer bg-primary text-primary-foreground shadow-xs hover:bg-primary/90",
         destructive:
