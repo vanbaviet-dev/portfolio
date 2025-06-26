@@ -7,6 +7,8 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { ModeToggle } from "./components/mode-toggle";
 import Footer from "./components/Footer";
 import Portfolio from "./pages/Portfolio";
+import Korean from "./pages/doc/Korean";
+import Vocabulary from "./pages/doc/Vocabulary";
 function App() {
   const Layout = () => {
     return (
@@ -46,6 +48,14 @@ function App() {
         {
           path: "/portfolio",
           element: <Portfolio />,
+        },
+        {
+          path: "/kr",
+          element: <Korean />,
+        },
+        {
+          path: "/kr/:class/vocab",
+          element: <Vocabulary />,
         },
       ],
     },

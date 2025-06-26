@@ -30,35 +30,35 @@ const components: {
 }[] = [
   {
     title: "Korean",
-    href: "/docs/kr",
+    href: "/kr",
     description:
       "Notes and lessons from my journey learning the Korean language.",
     icon: FlagKR,
   },
   {
     title: "English",
-    href: "/docs/eng",
+    href: "/eng",
     description:
       "Reflections and tips on improving English skills, especially for non-native learners.",
     icon: FlagUS,
   },
   {
     title: "SQL",
-    href: "/docs/sql",
+    href: "/sql",
     description:
       "Learnings and practical examples from working with SQL and databases.",
     icon: Sql,
   },
   {
     title: "Python",
-    href: "/docs/python",
+    href: "/python",
     description:
       "Python tutorials, code snippets, and real-world applications I've explored.",
     icon: Python,
   },
   {
     title: "Tools",
-    href: "/docs/tools",
+    href: "/tools",
     description:
       "Useful tools, coding tricks, or small utilities I've picked up and used",
     icon: Tools,

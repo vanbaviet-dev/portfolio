@@ -3,6 +3,7 @@ import ScrollDownIndicator from "@/components/ScrollDownIndicator";
 import { Button } from "@/components/ui/button";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-scroll";
 
 const Portfolio = () => {
   return (
@@ -13,9 +14,11 @@ const Portfolio = () => {
           <div className="text-3xl font-light">Data Engineer</div>
           <div></div>
           <div className="flex gap-10">
-            <Button variant="ghost" className="hover:scale-110">
-              View projects
-            </Button>
+            <Link to="projects" smooth={true} duration={500}>
+              <Button variant="ghost" className="hover:scale-110">
+                View projects
+              </Button>
+            </Link>
             <Button className="hover:scale-110">
               Get my CV
               <FontAwesomeIcon icon={faDownload} />
@@ -32,6 +35,18 @@ const Portfolio = () => {
       <div className="flex flex-col justify-center items-center pt-15">
         <div className="text-4xl font-bold" id="myskills">
           My skills
+        </div>
+        <div className="min-h-screen"></div>
+      </div>
+      <div className="flex flex-col justify-center items-center pt-15">
+        <div className="text-4xl font-bold" id="projects">
+          Projects
+        </div>
+        <div className="min-h-screen"></div>
+      </div>
+      <div className="flex flex-col justify-center items-center pt-15">
+        <div className="text-4xl font-bold" id="certifications">
+          Certifications
         </div>
         <div className="min-h-screen"></div>
       </div>

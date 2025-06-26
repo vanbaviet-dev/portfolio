@@ -73,20 +73,27 @@ export default function CircleDiagram() {
         const y = center + radius * Math.sin(angle);
 
         return (
-          <Button
-            variant="skill"
-            key={i}
-            className="absolute w-[80px] h-[80px] rounded-full flex flex-col items-center justify-center text-sm text-center shadow-md hover:scale-110 z-10"
-            style={{
-              left: `${x - 40}px`,
-              top: `${y - 40}px`,
-            }}
+          <Link
+            to="certifications"
+            smooth={true}
+            duration={500}
+            className="z-10"
           >
-            <div className="flex flex-col justify-center items-center">
-              <div>{item.icon}</div>
-              <div>{item.label}</div>
-            </div>
-          </Button>
+            <Button
+              variant="skill"
+              key={i}
+              className="absolute w-[80px] h-[80px] rounded-full flex flex-col items-center justify-center text-sm text-center shadow-md hover:scale-110 "
+              style={{
+                left: `${x - 40}px`,
+                top: `${y - 40}px`,
+              }}
+            >
+              <div className="flex flex-col justify-center items-center">
+                <div>{item.icon}</div>
+                <div>{item.label}</div>
+              </div>
+            </Button>
+          </Link>
         );
       })}
     </div>
