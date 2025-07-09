@@ -1,3 +1,4 @@
+import Certifications from "@/components/Certifications";
 import CircleDiagram from "@/components/CircleDiagram";
 import ScrollDownIndicator from "@/components/ScrollDownIndicator";
 import { Button } from "@/components/ui/button";
@@ -7,7 +8,7 @@ import { Link } from "react-scroll";
 
 const Portfolio = () => {
   return (
-    <div>
+    <div className="py-20">
       <div className="flex flex-row w-full justify-evenly items-center min-h-[calc(100dvh-150px)]">
         <div className="flex flex-col gap-4">
           <h1 className="text-6xl font-bold">Van Ba Viet</h1>
@@ -48,7 +49,9 @@ const Portfolio = () => {
         <div className="text-4xl font-bold" id="certifications">
           Certifications
         </div>
-        <div className="min-h-screen"></div>
+        <div className="w-full flex justify-center py-10">
+          <Certifications />
+        </div>
       </div>
     </div>
   );
